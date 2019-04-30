@@ -1,13 +1,7 @@
-#------------------------------------------------------------
-#        Script MySQL.
-#------------------------------------------------------------
+CREATE Database projetjavadomben;
+use projetjavadomben;
 
-
-#------------------------------------------------------------
-# Table: Ville
-#------------------------------------------------------------
-
-CREATE TABLE Ville(
+CREATE TABLE Ville (
         villeId            Int  Auto_increment  NOT NULL ,
         villeNom           Varchar (200) NOT NULL ,
         villeLong          Int NOT NULL ,
@@ -29,7 +23,7 @@ CREATE TABLE Ville(
         rtbDMax            Float NOT NULL ,
         rtbPMax            Float NOT NULL
 	,CONSTRAINT Ville_PK PRIMARY KEY (villeId)
-)ENGINE=InnoDB;
+);
 
 
 #------------------------------------------------------------
@@ -43,20 +37,16 @@ CREATE TABLE Terrain(
         terrainNomShort   Varchar (50) NOT NULL ,
         terrainCouleur    Varchar (50) NOT NULL
 	,CONSTRAINT Terrain_PK PRIMARY KEY (terrainId)
-)ENGINE=InnoDB;
+);
 
 
-#------------------------------------------------------------
-# Table: Case
-#------------------------------------------------------------
-
-CREATE TABLE Case(
-        CaseId    Int  Auto_increment  NOT NULL ,
-        Postion   Int NOT NULL ,
+CREATE TABLE Tuiles(
+        tuilesId    Int  Auto_increment  NOT NULL ,
+        tuilesPostion   Int NOT NULL ,
         terrainId Int ,
         villeId   Int
-	,CONSTRAINT Case_PK PRIMARY KEY (CaseId)
+	,CONSTRAINT Case_PK PRIMARY KEY (tuilesId)
 
 	,CONSTRAINT Case_Terrain_FK FOREIGN KEY (terrainId) REFERENCES Terrain(terrainId)
 	,CONSTRAINT Case_Ville0_FK FOREIGN KEY (villeId) REFERENCES Ville(villeId)
-)ENGINE=InnoDB;
+);
