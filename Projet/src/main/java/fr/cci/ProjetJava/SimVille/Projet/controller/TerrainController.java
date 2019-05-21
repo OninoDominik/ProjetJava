@@ -24,6 +24,7 @@ public class TerrainController {
         t.setTerrainImgUrl(terrainImgUrl);
         t.setTerrainType(terrainType);
         t.setTerrainNomShort(terrainNomShort);
+        t.setTerrainNom(terrainNom);
         terrainRepository.save(t);
         return "Saved";
     }
