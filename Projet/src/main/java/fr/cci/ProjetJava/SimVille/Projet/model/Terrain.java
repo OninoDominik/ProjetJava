@@ -12,8 +12,26 @@ public class Terrain {
     private String terrainNomShort;
     private String terrainImgUrl;
 
+    public Terrain(){
+         super();
+        this.terrainId = 0;
+        this.terrainType = 0;
+        this.terrainNom="default";
+        this.terrainNomShort = "default";
+        this.terrainImgUrl = "default";
+}
+
+    public Terrain(Integer terrainId,Integer terrainType,String terrainNom, String terrainNomShort, String terrainImgUrl) {
+        super();
+        this.terrainId = terrainId;
+        this.terrainType = terrainType;
+        this.terrainNom=terrainNom;
+        this.terrainNomShort = terrainNomShort;
+        this.terrainImgUrl = terrainImgUrl;
+    }
+
     public Integer getTerrainId() {
-        return terrainId;
+        return this.terrainId;
     }
 
     public void setTerrainId(Integer terrainId) {
