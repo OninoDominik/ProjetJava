@@ -44,7 +44,7 @@ public class TerrainController {
         Iterable<Terrain> terrains = terrainRepository.findAll();
 
         model.addAttribute("produits", terrains);
-
+        System.out.println(System.getProperty("java.class.path"));
         return "Accueil";  // on utilise thymeleaf -> retourne al page Accueil.html du dossier ressources
     }
 }
