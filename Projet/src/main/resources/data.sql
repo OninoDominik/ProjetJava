@@ -1,0 +1,27 @@
+INSERT INTO terrain (ID , TERRAIN_IMG_URL, terrain_nom, terrain_nom_short, terrain_type) VALUES (1, '/media/tiles/FOR_color.png', 'Foret', 'for', 1);
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (2, '/media/tiles/RIV_color.png', 'Riviere', 'riv', 2) ;
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (3, '/media/tiles/COM_color.png', 'Commerce', 'com', 3) ;
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (4, '/media/tiles/ECL_color.png', 'Ecole', 'ecl', 4);
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (5, '/media/tiles/EGL_color.png', 'Eglise', 'egl', 5);
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (6, '/media/tiles/POL_color.png', 'Police', 'pol', 6) ;
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (7, '/media/tiles/RES_color.png', 'Residence', 'res', 7) ;
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (8, '/media/tiles/RTB_color.png', 'Bus', 'rtb', 8) ;
+INSERT INTO terrain (id, terrain_img_url, terrain_nom, terrain_nom_short, terrain_type) VALUES (9, '/media/tiles/RTE_color.png', 'Route', 'rte', 9) ;
+INSERT INTO `ville` (`id`, `comdmax`, `compmax`, `ecldmax`, `eclpmax`, `egldmax`, `eglpmax`, `fordmax`, `forpmax`, `poldmax`, `polpmax`, `rivdmax`, `rivpmax`, `rtbdmax`, `rtbpmax`, `ville_larg`, `ville_long`, `ville_nom`, `ville_valeur_immo_max`, `ville_valeur_immo_min`) VALUES
+(1, 4, 15, 2, -30, 4, -30, 3, 40, 3, -55, 3, 25, 3, 25, 4, 4, 'Babylon', 2500, 500);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES (1, 0, 3, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(2, 1, 3, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(3, 2, 3, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(4, 3, 3, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(5, 4, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(6, 5, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(7, 6, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(8, 7, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(9, 8, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(10, 9, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(11, 10, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(12, 11, 7, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(13, 12, 4, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(14, 13, 5, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(15, 14, 5, 1);
+INSERT INTO `tuile_carte` (`id`, `tuile_carteposition`, `terrain_id`, `ville_id`) VALUES(16, 15, 4, 1);
